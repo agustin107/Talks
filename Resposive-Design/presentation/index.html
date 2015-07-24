@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Responsive Design - #HX15</title>
+
+		<meta name="description" content="Slides para la charla #PreHackathonExpress15 de maquetado web para principiantes">
+		<meta name="author" content="@agustin107 y @lujanfernando">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="css/style.css">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background-video="video/webdesign-vimeo.mp4" data-background-video-loop>
+					<img src="img/flyer-thumbail.jpg" alt="" >
+					<!--<h3>Maquetado web para principantes</h3>-->
+					<p>
+						<small>Oradores: <a href="https://twitter.com/lujanfernando">@lujanfernando</a> / <a href="https://twitter.com/agustin107">@agustin107</a></small>
+					</p>
+				</section>
+
+				<section >
+					<section id="fragments">
+						<h2>¿Qué vamos a ver?</h2>
+						<img src="img/5020724_orig.jpg" />
+					</section>
+					<section>
+						<h2>Diseño web adaptable</h2>
+						<p class="fragment grow">¿Qué es HTML?</p>
+						<p class="fragment grow">Estructura básica</p>
+						<p class="fragment grow">HTML5 - Nuevos Tags</p>
+					</section>
+				</section>
+
+				<section >
+					<section id="fragments">
+						<h2>¿Qué vamos a hacer?</h2>
+						<img src="img/images.jpg" />
+					</section>
+				</section>
+
+				<section>
+					<section data-background="img/html5.jpg">
+					</section>
+
+					<section>
+						<h2>¿Qué es Responsive Design?</h2>
+						<p>El Responsive design, es una tendencia totalmente nueva dentro del diseño web, la cual consiste en reacomodar los elementos que componen el sitio web, según el tamaño de dispositivo que la reproduzca.</p>
+					</section>
+					<section>
+						<h2>¿Por qué debo implementarlo en mi diseño?</h2>
+						<p>Porque responsive design tiene que ser pensado desde el concepto de diseño de nuestro sitio web.Este diseño debe tener un concepto de fluido entre los elementos que la componen para así lograr el perfecto flujo al momento de codificarlo.<p>
+					</section>
+					<section>
+						<h2>What???</h2>
+						<p>
+							<img src="img/what.jpg" width="auto" height="450" alt="What?">
+						<p>
+					</section>
+					<section>
+						<h2>Entonces, ¿puedo aplicar a mi diseño?</h2>
+						<p>Dependiendo de tu sitio web puede que sea más o menos costoso. En el peor de los casos, estás usando un cms con una plantilla pre-hecha, que va a tener un código desordenado o entendido por ese diseñador, y lo único que te ganes sean dolores de cabeza modificando el flujo del mismo.
+						</p>
+						<p>No obstante te invito a que des el siguiente paso y hagas un diseño a la medida, es decir que desde ya, pienses qué es lo que va a tener tu sitio y en base a eso planear su implementación para tener el flujo correcto y te sientas algo “anormal” por haberlo logrado.</p>
+					</section>
+					<section>
+						<h2>Genial, no?</h2>
+						<p>
+							<img src="img/good.jpg" alt="Genial">
+						<p>
+					</section>
+					<section>
+						<h2>Pero.. Qué es un diseño responsive o fluído?</h2>
+						<p>
+							Con ejemplos lo vamos a entender mejor :)
+							<br/>
+							<ul>
+								<li><a href="http://www.modernizr.com/" target="_blank">http://www.modernizr.com/</a></li>
+								<li><a href="http://mediaqueri.es/" target="_blank">http://mediaqueri.es/</a></li>
+								<li><a href="http://www.buildwindows.com/" target="_blank">http://www.buildwindows.com/</a></li>
+							</ul>
+						<p>
+					</section>
+					<section>
+						<h2>Cómo se logra?</h2>
+						<p>
+							Se logran con un conjunto de técnicas de <strong>css3</strong> y en especial las <strong>mediaqueries</strong> de las cuales hablaremos ahora.
+							<br/>
+							Esto no sólo es agregarle algo más a tu web para que sea más agradable o vistosa, es una necesidad hoy en día ya que la navegación móvil es cada vez más grande y con múltiples resoluciones, por lo cual debemos tener un diseño que se adapte a todo.
+							<br/>
+							<h3>SÍ, a TODO!!!</h3>
+						<p>
+					</section>
+					<section>
+						<h2>Cómo lo implemento?</h2>
+						<p>
+							Tener los diseños listos antes de su implementación ayuda mucho a tener la mente clara al momento de codificarlo.
+							<br/>
+							Pero no confundamos, no son cuatro diseños para un sitio web, es solo uno (tener cuatro diseños sería una muy mala idea) lo que realmente se hace en los “diseños” adicionales es solo reacomodar el contenido, jerarquizando la información de dicho sitio web.
+						<p>
+					</section>
+					<section>
+						<h2>Patrones Responsive</h2>
+						<p>
+							Se utilizan diversos patrones a la hora de implementar Responsive en un diseño web, es decir, la forma en la que los elementos del sitio web van a ir siendo re-ubicados dentro de la página.
+						<p>
+					</section>
+					<section>
+						<h2>Mostly Fluid</h2>
+						<p>
+							Este quizás es el más popular dentro del responsive design ya que se implementa un primer bloque “protagonista”, seguido de otros 2 con menos relevancia y este al momento de tener un dispositivo se adapta siguiendo el flujo que hay en este.
+						<p>
+						<p>
+							<img src="img/rwd-mostly-fluid.jpg" alt="">
+						</p>
+					</section>
+					<section>
+						<h2>Column Drop</h2>
+						<p>
+							Este tipo de patrón se adapta hasta el punto en el que no se pueden manejar las tres columnas en una sola fila, entonces la columna (con el contenido menos relevante) pasa a la parte inferior y luego el flujo se sigue desarrollando hasta llegar a una sola columna.
+						<p>
+						<p>
+							<img src="img/rwd-column-drop.jpg" alt="">
+						</p>
+					</section>
+					<section>
+						<h2>Layout shifter</h2>
+						<p>
+							Este patrón probablemente es la forma en la que se innova en el diseño responsive, ya que cambia ligeramente el diseño.
+							<br/>
+							Esta estructura está orientanda a dar una experiencia diferente en dispositivos de pantallas más reducidas.
+						<p>
+						<p>
+							<img src="img/rwd-layout-shifter.jpg" alt="">
+						</p>
+					</section>
+					<section>
+						<h2>Tyny tweaks</h2>
+						<p>
+							Este patrón es puro para los micro sitios que sólo brindan información referencial del producto e invitan a una acción rápida, por tanto la navegación es casi nula y el responsive sólo adapta los contenidos a la pantalla sin casi hacerle cambios.
+						<p>
+						<p>
+							<img src="img/rwd-tiny-tweaks.jpg" alt="">
+						</p>
+					</section>
+					<section>
+						<h2>Off canvas</h2>
+						<p>
+							Este patrón es la más popular en las aplicaciones web que no siempre tienen un diseño ¡wow! sino más bien guardan muchas información y múltiples opciones por lo que tienen que recurrir a esta clase de responsive.
+						</p>
+						<p>
+							Consiste en sólo tener un bloque de información general que no distraiga mucho <strong>(como el timeline de facebook en su aplicacion móvil)</strong> y guardan las demás opciones o menús en botones que suelen tener íconos para distinguirlos. Es indispensable que sean interfaces muy <strong>usables</strong>.
+						<p>
+						<p>
+							<img src="img/rwd-off-canvas.jpg" alt="">
+						</p>
+					</section>
+					<section>
+						<h2>La eiqueta <meta> viewport en la web móvil</h2>
+						<p>
+							La etiqueta meta para el viewport fue introducida por Apple en Safari para móviles, para ayudar a los desarrolladores a mejorar la presentación de sus aplicaciones web en un iPhone, iPod Touch o iPad.
+							<br/>
+							La etiqueta viewport nos permite a los que construimos sitios web o web apps, definir el ancho, alto y escala del área usada por el navegador para mostrar contenido.
+							<br/>
+							<pre>
+								<code data-trim style="font-size: 20px; margin-top: 20px;">
+									<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" ></meta>
+								</code>
+							</pre>
+						<p>
+					</section>
+					<section>
+						<h2>Mucha teoría, ahora vamos a las piñas ..</h2>
+						<p>
+							Espero que les haya gustado, y a los que están interesados en seguir aprendiendo esta nueva herramienta para los sitios web.
+							Se comunican conmigo por..
+						</p>
+						<p>
+							<ul>
+								<li>
+									<b>Twitter:</b> <a href="#">@agustin107</a>
+								</li>
+								<li>
+									<b>Linkedin:</b> <a href="#">Agustin Ramirez</a>
+								</li>
+								<li>
+									<b>Correo:</b> <a href="#">agustin107@gmail.com</a>
+								</li>
+							</ul>
+						</p>
+					</section>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
