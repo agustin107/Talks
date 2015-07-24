@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Maquetado web para principiantes - #HX15</title>
+
+		<meta name="description" content="Slides para la charla #PreHackathonExpress15 de maquetado web para principiantes">
+		<meta name="author" content="@agustin107 y @lujanfernando">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="css/style.css">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background-video="video/webdesign-vimeo.mp4" data-background-video-loop>
+					<img src="img/flyer-thumbail.jpg" alt="" >
+					<!--<h3>Maquetado web para principantes</h3>-->
+					<p>
+						<small>Oradores: <a href="https://twitter.com/lujanfernando">@lujanfernando</a> / <a href="https://twitter.com/agustin107">@agustin107</a></small>
+					</p>
+				</section>
+
+				<section >
+					<section id="fragments">
+						<h2>¿Qué vamos a ver?</h2>
+						<img src="img/5020724_orig.jpg" />
+					</section>
+					<section>
+						<h2>HTML 5</h2>
+						<p class="fragment grow">¿Qué es HTML?</p>
+						<p class="fragment grow">Estructura básica</p>
+						<p class="fragment grow">HTML5 - Nuevos Tags</p>
+					</section>
+					<section>
+						<h2>CSS 3</h2>
+						<p class="fragment grow">¿Qué es CSS?</p>
+						<p class="fragment grow">Identificación de Elementos</p>
+						<p class="fragment grow">CSS3 - Nuevas Propiedades</p>
+					</section>
+				</section>
+
+				<section >
+					<section id="fragments">
+						<h2>¿Qué vamos a hacer?</h2>
+						<img src="img/images.jpg" />
+					</section>
+					<section>
+						<h2>HTML 5</h2>
+						<p class="fragment grow">Página web para eventos</p>
+					</section>
+					<section>
+						<h2>CSS 3</h2>
+						<p class="fragment grow">Dar estilo a la página</p>
+					</section>
+				</section>
+
+				<section>
+					<section data-background="img/html5.jpg">
+					</section>
+
+					<section>
+						<h2>¿Qué es HTML 5?</h2>
+						<p class="fragment current-visible">Es la quinta revisión importante del lenguaje básico de la World Wide Web, HTML</p>
+					</section>
+
+					<section>
+						<h2>¿Pero qué es HTML?</h2>
+						<p class="fragment current-visible">HTML es un lenguaje de marcado para la elaboración páginas web.</p>
+						<p class="fragment current-visible">HTML -> de las siglas <strong>H</strong>yper <strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage</p>
+					</section>
+
+					<section>
+						<h2>¿Qué es un lenguaje de marcado?</h2>
+						<p class="fragment current-visible">Un lenguaje de marcado es un conjunto de <strong>tags</strong> o «etiquetas» de marcado</p>
+						<p class="fragment current-visible">Las etiquetas <strong>describen</strong> el contenido del documento</p>
+						<p class="fragment current-visible">O eso intentan...</p>
+					</section>
+
+					<section>
+						<h2>¿Es HTML un lenguaje de programación?</h2>
+						<p class="fragment current-visible"><strong>N</strong></p>
+						<p class="fragment current-visible"><strong>O</strong></p>
+						<p class="fragment current-visible"><strong>NO</strong></p>
+					</section>
+
+					<section>
+						<h2></h2>
+						<p class="fragment current-visible">Los documentos HTML contienen HTML tags y texto plano (Referenciación)</p>
+						<p class="fragment current-visible">Estos documentos son los llamados web pages (Páginas web)</p>
+						<p class="fragment current-visible"><strong>NO</strong></p>
+					</section>
+
+					<section>
+						<h2>Referenciación</h2>
+						<p class="fragment current-visible">El lenguaje HTML basa su filosofía de desarrollo en la referenciación.</p>
+						<p class="fragment current-visible">La página web contiene sólo texto mientras que recae en el navegador web (interpretador del código) la tarea de unir todos los elementos y visualizar la página final.</p>
+					</section>
+
+					<section>
+						<h2>Componentes</h2>
+						<p class="fragment current-visible">HTML consta de varios componentes vitales, entre ellos...</p>
+						<p class="fragment current-visible">Los elementos y sus atributos</p>
+						<p class="fragment current-visible">Tipos de data</p>
+						<p class="fragment current-visible">la declaración de tipo de documento</p>
+					</section>
+
+					<section>
+						<h2>Elementos</h2>
+						<p class="fragment current-visible">Los elementos son la estructura básica de HTML.</p>
+						<p class="fragment current-visible">Tienen dos propiedades básicas: atributos y contenido. </p>
+						<p class="fragment current-visible">Cada atributo y contenido tiene ciertas restricciones para que se considere válido al documento HTML.</p>
+						<p class="fragment current-visible">Un elemento generalmente tiene una etiqueta de inicio y una etiqueta de cierre.</p>
+						```
+						<tagname>content</tagname>
+						```
+					</section>
+
+					<section>
+						<h2>Atributos</h2>
+						<p class="fragment current-visible">La mayoría de los atributos de un elemento son pares nombre-valor, separados por un signo de igual «=» y escritos en la etiqueta de comienzo de un elemento, después del nombre de éste.</p>
+
+						```
+						<tagname atribute="value">content</tagname>
+						```
+					</section>
+
+					<section>
+						<h2>¿Qué hay de nuevo viejo?</h2>
+						<img src="img/HTML5.png">
+						<a href="http://www.w3schools.com/tags/default.asp">W3Schools</a>
+					</section>
+
+					<section>
+						<h2>Nuevos Elementos Semánticos en HTML5</h2>
+						<ul>
+							<li><code><header></code></li>
+							<li><code><nav></code></li>
+							<li><code><section></code></li>
+							<li><code><article></code></li>
+							<li><code><aside></code></li>
+							<li><code><figure></code></li>
+							<li><code><figcaption></code></li>
+							<li><code><footer></code></li>
+							<li><code><details></code></li>
+							<li><code><summary></code></li>
+							<li><code><mark></code></li>
+							<li><code><time></code></li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Otros elementos nuevos</h2>
+						<h3>Graficos</h3>
+						<ul>
+							<li><code><svg></code></li>
+							<li><code><canvas></code></li>
+						</ul>
+						<h3>Multimedia</h3>
+						<ul>
+							<li><code><audio></code></li>
+							<li><code><video></code></li>
+						</ul>
+						<h3>HTML5 APIs</h3>
+						<ul>
+							<li>HTML Geolocation</li>
+							<li>HTML Drag and Drop</li>
+							<li>HTML Local Storage</li>
+							<li>HTML Application Cache</li>
+						</ul>
+						<a href="http://www.w3schools.com/html/html5_intro.asp">W3Schools</a>
+					</section>
+
+					<section>
+						<h2>Soporte en navegadores</h2>
+						<img src="img/browsersupport.png"/>
+					</section>
+
+					<section>
+						<h2>Antes...</h2>
+						<img src="img/antes1.png"/>
+					</section>
+
+					<section>
+						<h2>...Después</h2>
+						<img src="img/despues1.png"/>
+					</section>
+
+					<section>
+						<img src="img/antesydespues2.jpg"/>
+					</section>
+
+					<section data-background="img/code-02.gif">
+						<img src="img/antesydespues3.png"/>
+					</section>
+
+					<section >
+						<h2>ABURRIDOOOO!!!</h2>
+					</section>
+
+					<section>
+						<h2>OK!</h2>
+						<p>Hora de la diversion!</p>
+					</section>
+				</section>
+
+				<section>
+					<section data-background="img/css3-background.jpg">
+					</section>
+
+					<section>
+						<h2>¿Que es CSS?</h2>
+						<p>CSS es un mecanismo simple para añadir estilo a los documentos web.</p>
+					</section>
+
+					<section>
+						<h2>"La idea es..</h2>
+						<p>separar la estructura de un documento de su presentación."</p>
+					</section>
+
+					<section>
+						<h2>Pero para que sirve separarlos?</h2>
+						<p>Además de que nos genera una estructura limpia de nuestro proyecto, todo encierra en la <strong>SEMÁNTICA</strong>.
+						<br>
+						La SEMÁNTICA se refiere a la interpretación del significado de un determinado elemento o representación formal.</p>
+					</section>
+
+					<section>
+						<h2>Y esto nos lleva a?</h2>
+						<p>A las búsquedas! Sí, la semántica aplicada a la web, hace que todo tenga sentido.</p>
+					</section>
+
+					<section>
+						<h2>Un ejemplo..</h2>
+						<p>En un documento común y corriente nos encontramos con elementos como:</p>
+						<ul>
+							<li>Titulo</li>
+							<li>Subtitulo</li>
+							<li>Parrafo</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Seguimos con el ejemplo..</h2>
+						<p>
+							Nosotros los humanos es fácil reconocer los elementos antes nombrados, pero para los buscadores, entienden de la misma manera que nosotros?
+							<br>
+							Y si los buscadores no pueden entender, <strong>cómo van a arrojar información</strong> acertada o relevante a nuestras consultas?
+						</p>
+					</section>
+
+					<section>
+						<h2>Y sigue el ejemplo chs..</h2>
+						<p>
+							Es por eso que la W3C define estándares para la estructura de los documentos escritos en HTML y XML, así como también lo hace para CSS.
+						</p>
+					</section>
+
+					<section>
+						<h2>Vamos a lo nuestro..</h2>
+						<p>Una vez definidas ciertas reglas de estructura con la semántica cómo base, está el problema del estilo.. Veámos otro ejemplo pero más gráfico:</p>
+					</section>
+
+					<section>
+						<h2>Este es Facebook</h2>
+						<p>Ya estructurado y semánticamente amigable a los buscadores, pero sin estilo.. <strong>no es Facebook no?</strong>
+						<img src="img/css-facebook.png" alt="">
+						</p>
+					</section>
+
+					<section>
+						<h2>Y ahí es donde entra en juego CSS</h2>
+						<p>Veamos el ejemplo anterior pero con estilo:
+						<br>
+						<img src="img/css-facebook2.png" alt=""></p>
+					</section>
+
+					<section>
+						<h2>Ventajas que tiene usar 	CSS</h2>
+						<p>
+							<strong>Separación de forma y contenido:</strong> diseñador y programador pueden trabajar independientemente.
+						</p>
+						<p>
+							<strong>Precisión:</strong> La utilización del mismo, permite un control mucho mayor sobre el diseño.
+						</p>
+						<p>
+							<strong>Mantenimiento: </strong> Reduce notablemente el tiempo de mantenimiento cuando es necesario introducir un cambio.
+						</p>
+						<p>
+							<strong>Posicionamiento:</strong> Las páginas separadas en la estructura y presentación, tienen un código más limpio porque no llevan diseño, sólo contenido. Google navega obviando el diseño.
+						</p>
+					</section>
+
+					<section>
+						<h2>¿Cómo funciona?</h2>
+						<p>Las hojas de estilos están compuestas por una o más reglas.</p>
+						<p>Las reglas tienen dos partes: un <strong>selector</strong> y la <strong>declaración</strong>.</p>
+						<p>A su vez la declaración está compuesta por una <strong>propiedad</strong> y el <strong>valor</strong> que se le asigne</p>
+						<p><a href="#">h1 { color: red; }</a></p>
+					</section>
+
+					<section>
+						<h2>Y CSS3?</h2>
+						<p>Nos trae:</p>
+						<ul>
+							<li>Nuevas posibilidades de decoración</li>
+							<li>Menos markup</li>
+							<li>Menos dependencia de Javascript</li>
+							<li>Mayor control</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Vamos a las piñas</h2>
+						<img src="img/CSS3-properties.jpg" alt="">
+					</section>
+
+					<section>
+						<h2>Veamos código, que esto aburre ..</h2>
+						<img src="img/cara-chistosa.jpg" alt="">
+					</section>
+
+					<section data-background="img/code-35.gif">
+						<h2>Yes!!!</h2>
+					</section>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
